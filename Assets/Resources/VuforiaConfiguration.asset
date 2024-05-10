@@ -24,7 +24,7 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.21.3
-    eulaAcceptedVersions: '{"Values":["10.21"]}'
+    eulaAcceptedVersions: '{"Values":["10.21","0.0","10.6","10.4","8.5","10.8","9.6","9.8","10.9","10.11","8.3","10.16"]}'
   database:
     disableModelExtraction: 0
   shaders:
@@ -41,7 +41,7 @@ MonoBehaviour:
   deviceTracker:
     autoStartTracker: 0
     arcoreRequirement: 1
-    autoImportArcore: 1
+    autoImportArcore: 0
     thirdPartyARCoreClientDetected: 0
   playmode:
     mRecordingPath: 
