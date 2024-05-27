@@ -10,6 +10,7 @@ public class toggle_joystick : MonoBehaviour
     public Toggle toggle;
     public GameObject ball;
     public Rigidbody rb;
+    public GameObject gravityPanel;
     public float speed = 1.0f;
     // Start is called before the first frame update
     void Start()
@@ -39,11 +40,13 @@ public class toggle_joystick : MonoBehaviour
         {
             jsFather.SetActive(false);
             rb.useGravity = true;
+            gravityPanel.SetActive(true);
         }
         else
         {
             jsFather.SetActive(true);
             rb.useGravity = false;
+            gravityPanel.SetActive(false);
         }
     }
 

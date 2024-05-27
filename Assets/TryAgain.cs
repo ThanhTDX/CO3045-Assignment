@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TryAgain : MonoBehaviour
 {
@@ -13,20 +14,17 @@ public class TryAgain : MonoBehaviour
     private Vector3 spawn;
     void Start()
     {
-        float x = sphere.transform.position.x;
-        float y = sphere.transform.position.y;
-        float z = sphere.transform.position.z;
-        spawn = new Vector3(x, y, z);
+        Debug.Log(spawn.ToString());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
+
     public void onButtonClick()
     {
         winNotification.SetActive(false);
-        sphere.transform.position = spawn;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
